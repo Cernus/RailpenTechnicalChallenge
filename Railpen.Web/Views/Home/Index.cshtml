@@ -1,0 +1,131 @@
+﻿@model Railpen.Data.ViewModels.QuoteVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="multi-step-form-container">
+    <!-- Step 1 Title -->
+    <div id="step-title-1" class="form-step">
+        <h2 style="text-align: center">Get a project quote</h2>
+        <p class="dexcription-text">
+            Please fill in the form below to receive a quote for your project. Click
+            next step to continue.
+        </p>
+    </div>
+
+    <!-- Step 2 Title -->
+    <div id="step-title-2" class="form-step d-none" style="margin-bottom: 50px">
+        <h2 style="text-align: center">Complete your quote</h2>
+        <p class="dexcription-text">
+            Please fill submit your option below.
+        </p>
+    </div>
+
+    <div class="form-border">
+        <!-- Form Steps / Progress Bar -->
+        <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+            <!-- Step 1 -->
+            <li class="form-stepper-active text-center form-stepper-list" step="1">
+                <a class="mx-2">
+                    <span class="form-stepper-circle">
+                        <span>1</span>
+                    </span>
+                    <div class="label progress-text">Get a project quote</div>
+                </a>
+            </li>
+            <!-- Step 2 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>2</span>
+                    </span>
+                    <div class="label text-muted progress-text">Complete your quote</div>
+                </a>
+            </li>
+        </ul>
+        <hr />
+        <!-- Step Wise Form Content -->
+        @* <form id="quoteform" name="quoteform" enctype="multipart/form-data" method="POST"> *@
+        <form id="quoteform" name="quoteform" method="POST">
+            <!-- Step 1 Content -->
+            <section id="step-1" class="form-step">
+                <!-- Step 1 input fields -->
+                <h3 class="font-normal">Contact details</h3>
+                <p>
+                    Enter your details below
+                </p>
+
+                <div id="error"></div>
+                <div class="row">
+                    <!-- Name -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="input-group">
+                            <h4 class="col-12">@Html.DisplayNameFor(model => model.Name)</h4>
+                            <div class="col-12">@Html.EditorFor(model => model.Name, new { htmlAttributes = new { @id="name", @name="name", @class = "form-control", @placeholder = "Name", @required = "required" } })</div>
+                        </div>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="input-group">
+                            <h4 class="col-12">@Html.DisplayNameFor(model => model.Email)</h4>
+                            <div class="col-12">@Html.EditorFor(model => model.Email, new { htmlAttributes = new { @id="email", @name="email", @class = "form-control", @placeholder = "Email address", @required = "required" } })</div>
+                        </div>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="input-group">
+                            <h4 class="col-12">@Html.DisplayNameFor(model => model.PhoneNumber)</h4>
+                            <div class="col-12">@Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control", @placeholder = "Phone Number", @required = "required" } })</div>
+                        </div>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="input-group">
+                            <h4 class="col-12">@Html.DisplayNameFor(model => model.Company)</h4>
+                            <div class="col-12">@Html.EditorFor(model => model.Company, new { htmlAttributes = new { @class = "form-control", @placeholder = "Company name", @required = "required" } })</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3" style="float:right">
+                    <button class="button btn-navigate-form-step" style="margin-top: 50px" type="button" step_number="2">Next Step</button>
+                </div>
+            </section>
+            <!-- Step 2 Confirmation. -->
+            <section id="step-2" class="form-step d-none">
+                <div class="row" style="margin: 5px">
+                    <div class="col-md-6 col-sm-12" style="margin-bottom: 10px">
+                        <div class="summary-text">
+                            <p class="col-sm-12" style="display: grid">
+                                Please review all the
+                                information you previously
+                                typed in the past steps, and if
+                                all is okay, submit your
+                                message to receive a project
+                                quote in 24 - 48 hours.
+                            </p>
+                            <div style="align-self: end">
+                                <button class="button" type="button">Submit</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 col-sm-12"  style="margin-bottom: 10px">
+                        <div class="summary-text">
+                            <p class="col-sm-12" style="display: grid">
+                                I no longer wish to complete
+                                this quote.
+                            </p class-col-sm-12>
+                            <div style="align-self: end">
+                                <button class="button btn-navigate-form-step" type="button" step_number="1">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</div>

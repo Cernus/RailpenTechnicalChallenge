@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QpeJ2Ra3aS7QVjqOQj5kvS6wucMbmzd6XF5IyYG/PenxjOPZcwUBbb4NYfgsnFb44QBwpqGFHys3PFM01ivRcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PKitc\\source\\RailpenTechnicalChallenge\\Railpen.Web\\Railpen.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PKitc\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512"
+  ],
+  "logs": []
+}

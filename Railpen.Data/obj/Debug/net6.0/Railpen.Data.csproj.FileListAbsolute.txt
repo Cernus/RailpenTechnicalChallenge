@@ -1,0 +1,11 @@
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\bin\Debug\net6.0\Railpen.Data.deps.json
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\bin\Debug\net6.0\Railpen.Data.dll
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\bin\Debug\net6.0\Railpen.Data.pdb
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\Railpen.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\Railpen.Data.AssemblyInfoInputs.cache
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\Railpen.Data.AssemblyInfo.cs
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\Railpen.Data.csproj.CoreCompileInputs.cache
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\Railpen.Data.dll
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\refint\Railpen.Data.dll
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\Railpen.Data.pdb
+C:\Users\PKitc\source\RailpenTechnicalChallenge\Railpen.Data\obj\Debug\net6.0\ref\Railpen.Data.dll

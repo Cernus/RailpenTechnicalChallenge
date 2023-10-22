@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RailpenTechnicalChallenge</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="container-fluid header-style">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <span class="globe-icon"></span>
+                    <h2 style="display:inline-block; font-weight:800">Your Site <span class="orangeText">Design</span></h2>
+                </div>
+                <div class="col-md-4 col-sm-12 login-button">
+                    <button class="button" type="button">Log in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid header-style">
+            <div class="row">
+                <div class="col-xl-6 col-xs-12" style="margin-bottom: 10px">
+                    <div>
+                        <span class="globe-icon"></span>
+                        <h2 style="display:inline-block; font-weight:800">Your Site <span class="orangeText">Design</span></h2>
+                    </div>
+                    <div>
+                        Copyright &copy; 2023 All Rights Reserved
+                    </div>
+                </div>
+                <div class="col-xl-6 col-xs-12" style="text-align: right">
+                    <input class="form-control subscribe-input" placeholder="Enter your email" />
+                </div>
+            </div>
+            <div style="position: absolute; left: calc(100% - 90px); bottom: 84px">
+                <button class="button subscribe-button" type="button">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/multistepform.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
